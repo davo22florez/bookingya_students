@@ -336,3 +336,26 @@ LinkedIn • GitHub • Backend Engineer
 ## 📄 Licencia
 
 Este proyecto está licenciado bajo la **Apache License 2.0**.
+
+## ✅ Taller de pruebas automatizadas (TDD, BDD y ATDD)
+
+Este repositorio ahora incluye:
+
+- **Fase TDD (JUnit 5 + Mockito):** pruebas unitarias para crear, consultar, actualizar, eliminar y obtener reserva por ID.
+- **Fase BDD (Serenity + Cucumber):** escenario funcional en Gherkin con Step Definitions en Java.
+- **Fase ATDD (Playwright + TypeScript):** prueba de aceptación automatizada orientada a criterios del usuario final.
+- **CI con GitHub Actions:** ejecución automática de pruebas Java (TDD + BDD) en cada push y pull request.
+
+### Ejecución local
+
+```bash
+./mvnw test
+```
+
+### Ejecutar ATDD (Playwright)
+
+```bash
+cd atdd
+npm install
+npx playwright test
+```
